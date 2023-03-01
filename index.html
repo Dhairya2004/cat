@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        .cat-section {
+            height: 50vh;
+            background: url('https://www.bing.com/th/id/OGC.368ee939d92c487db39d486617a8e114?pid=1.7&rurl=https%3a%2f%2fmedia.tenor.com%2fimages%2f368ee939d92c487db39d486617a8e114%2ftenor.gif&ehk=%2fH5WpsLbydy6h7e3MLHLrL6DR5o1MV2gUKfsYiX%2bwVM%3d') no-repeat center center;
+            background-size: cover;
+        }
+
+        .cat-section h1 {
+            margin-top: 10%;
+            font-size: 4rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+        }
+
+        .cat-section p {
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+        }
+
+        .button-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .button-section button {
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-section button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row cat-section">
+
+        </div>
+        <div class="row button-section">
+            <div class="col-12">
+                <div class="col-12">
+                    <h1>oiiii</h1>
+                </div>
+                <button id="hi1">Han</button>
+                <button id="bye1">kya hai</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        $('#hi1').click(function () {
+            if ($(this).attr('id') == 'hi1') {
+                $(this).text('Nah re');
+                $(this).attr('id', 'hi2');
+                $('h1').text('Mai kitna pareshan karta hu na');
+                $('.cat-section').css('background-image', 'url("https://www.bing.com/th/id/OGC.e07eddaed1f1d56d96bcc2be7c16b9db?pid=1.7&rurl=https%3a%2f%2fmedia.tenor.com%2fimages%2fe07eddaed1f1d56d96bcc2be7c16b9db%2ftenor.gif&ehk=qHYC%2fHrX1MvhxC3u0WplVXxgpBaF%2bD6b0tbq9NHrjtY%3d")');
+
+            } else if ($(this).attr('id') == 'hi2') {
+                $(this).text('Hanji');
+                $(this).attr('id', 'hi3');
+                $('h1').text('Pakkaa !?');
+                $('.cat-section').css('background-image', 'url("https://media.tenor.com/DsoPnpJIgfsAAAAM/cat-kitty.gif")');
+
+            } else if ($(this).attr('id') == 'hi3') {
+                $(this).text('Meow');
+                $(this).attr('id', 'hi4');
+                $('h1').text('Yayyy! chalo mana toh liya mtlb');
+                $('.cat-section').css('background-image', 'url("https://media.tenor.com/P4w9f-MiY5wAAAAM/kitten-kiss.gif")');
+            }
+        });
+        $('#bye1').click(function () {
+            if ($(this).attr('id') == 'bye1') {
+                $('h1').text('ohoo abhi bhi naraz hai');
+                $(this).text('Han');
+                $(this).attr('id', 'bye2');
+                
+                $('.cat-section').css('background-image', 'url("https://media.tenor.com/NjF-4LBl_SsAAAAM/cat-sad.gif")');
+
+            } else if ($(this).attr('id') == 'bye2') {
+                $(this).text('han');
+                $(this).attr('id', 'bye3');
+                $('h1').text('Accha chal Haan daba ke dikha');
+                $('.cat-section').css('background-image', 'url("https://media.tenor.com/DsoPnpJIgfsAAAAM/cat-kitty.gif")');
+
+            }
+        });
+    </script>
+</body>
+
+</html>
